@@ -12,8 +12,8 @@ provider "heroku" {
   api_key = var.heroku_api_key
 }
 
-resource "heroku_app" "default" {
-  name   = var.heroku_app_name
+resource "heroku_app" "production" {
+  name = var.heroku_app_name
   region = var.heroku_app_region
 
   config_vars = {
@@ -23,7 +23,7 @@ resource "heroku_app" "default" {
 		AWS_S3_REGION = ""
 		AWS_SECRET_ACCESS_KEY = ""
 		AWS_STORAGE_ENABLED = ""
-		#DATABASE_URL = ""
+		#DATABASE_URL = "" # attach in addons.tf
 		DEFAULT_LOCALE = "en"
 		FALLBACK_LOCALES = "en"
 		LANG = "en_US.UTF-8"
