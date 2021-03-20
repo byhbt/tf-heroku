@@ -1,0 +1,13 @@
+heroku_account_email = "john.doe@example.com"
+
+heroku_api_key = "heroku_api_key"
+
+heroku_region = "us"
+
+heroku_database = "heroku-postgresql:hobby-dev"
+
+heroku_redis = "heroku-redis:hobby-dev"
+
+heroku_app_buildpacks = [
+  "heroku/go",
+]
