@@ -2,26 +2,19 @@
 
 Provider [document](https://registry.terraform.io/providers/heroku/heroku/latest/docs)
 
-```
-$ export HEROKU_EMAIL="example@mail.com"
-$ export HEROKU_API_KEY="heroku_api_key"
-$ terraform plan
-
-```
-
 # Requisites
 - Heroku CLI latest version
 - Terraform v0.14.5 
 
-
 # Usage
 
-Copy varibles file
+Copy the variable file.
 
 ```
 cp terraform.tfvars.sample terraform.tfvars
 ```
-Edit this variables file follow you own Heroku information.
+
+Update the variables inside the file, follow you own Heroku information (app name, API key, email...)
 
 Install Terrafor dependencies.
 
