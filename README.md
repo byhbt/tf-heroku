@@ -1,10 +1,16 @@
 # Introduction
 
-Provider [document](https://registry.terraform.io/providers/heroku/heroku/latest/docs)
+Heroku Provider [document](https://registry.terraform.io/providers/heroku/heroku/latest/docs).
+
+This script will help you initialize:
+- Dyno
+- PostgresDB (hobby plan)
+- Redis (hobby plan)
+
 
 # Prerequisites
 - Heroku CLI latest version
-- Terraform v0.14.5 
+- Terraform `v0.14.5`
 
 # Usage
 
