@@ -5,17 +5,17 @@ resource "heroku_addon" "database" {
 }
 
 data "heroku_app" "production" {
-    name = heroku_app.production.name
-    depends_on = [
-        heroku_addon.database
-    ]
+  name = heroku_app.production.name
+  depends_on = [
+    heroku_addon.database
+  ]
 }
 
 resource "heroku_app_config_association" "database" {
-    app_id = heroku_app.production.id
-    sensitive_vars = {
-        DATABASE_URL = data.heroku_app.production.config_vars.DATABASE_URL
-    }
+  app_id = heroku_app.production.id
+  sensitive_vars = {
+    DATABASE_URL = data.heroku_app.production.config_vars.DATABASE_URL
+  }
 }
 
 # Redis 
@@ -25,16 +25,16 @@ resource "heroku_addon" "redis" {
 }
 
 data "heroku_app" "redis_production" {
-    name = heroku_app.production.name
-    depends_on = [
-        heroku_addon.redis
-    ]
+  name = heroku_app.production.name
+  depends_on = [
+    heroku_addon.redis
+  ]
 }
 
 resource "heroku_app_config_association" "redis" {
-    app_id = heroku_app.production.id
-    sensitive_vars = {
-        REDIS_URL = data.heroku_app.redis_production.config_vars.REDIS_URL
-    }
+  app_id = heroku_app.production.id
+  sensitive_vars = {
+    REDIS_URL = data.heroku_app.redis_production.config_vars.REDIS_URL
+  }
 }
 
