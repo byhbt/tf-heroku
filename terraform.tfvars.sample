@@ -2,7 +2,7 @@ heroku_account_email = "john.doe@example.com"
 
 heroku_api_key = "heroku_api_key" # You can get the API from: cat ~/.netrc
 
-heroku_region = "us"
+heroku_app_region = "us"
 
 heroku_database = "heroku-postgresql:hobby-dev"
 
