@@ -8,13 +8,13 @@ Provider [document](https://registry.terraform.io/providers/heroku/heroku/latest
 
 # Usage
 
-Copy the variable file.
+Step 1: Copy the variable file
 
 ```
 cp terraform.tfvars.sample terraform.tfvars
 ```
 
-Update the variables inside the file, follow you own Heroku information (app name, API key, email...)
+Step 2: Update the variables inside the file, follow you own Heroku information (app name, API key, email...)
 
 Install Terrafor dependencies.
 
