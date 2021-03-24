@@ -1,9 +1,9 @@
 variable "heroku_app_region" {
-  description = "The main app region"
+  description = "The region where the dyno located"
 }
 
 variable "heroku_app_name" {
-  description = "The main app name"
+  description = "The name of application"
 }
 
 variable "heroku_account_email" {
@@ -18,11 +18,11 @@ variable "heroku_app_buildpacks" {
   description = "Heroku build packs"
 }
 
-# Addons variable
+# Addon variables
 variable "heroku_database" {
-  description = "Heroku database plan"
+  description = "Heroku Database plan"
 }
 
 variable "heroku_redis" {
-  description = "Heroku redis plan"
+  description = "Heroku Redis plan"
 }

@@ -29,7 +29,7 @@ resource "heroku_app" "production" {
     LANG = "en_US.UTF-8"
     MAILER_DEFAULT_HOST = "localhost"
     MAILER_DEFAULT_PORT = "3000"
-    MAILER_SENDER = "huynhbathanh@gmail.com"
+    MAILER_SENDER = ""
     RACK_ENV = "production"
     RAILS_ENV = "production"
     RAILS_LOG_TO_STDOUT = "enabled"
